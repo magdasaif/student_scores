@@ -25,7 +25,7 @@ class SubjectController extends Controller
             //************************************************************* */
             $subject = Subject::create([
                 'name'   => $request->input('name'),
-                'active' => $request->input('active', 0),
+                'active' => $request->input('active', 1),
             ]);
             //*************************************************************
             if ($request->has('scores')) {
